@@ -1,15 +1,12 @@
-import random
-from utils.constants import COUNTRIES
-
+from utils.game import start_game
 if __name__ == "__main__":
-    country = random.choice(COUNTRIES)
 
     while True:
         print("1. Start Game!")
         print("2. End Game!")
         customer = input("Please write your option: ")
         if customer == "1":
-            pass
+            start_game()
         elif customer == "2":
             break
 
