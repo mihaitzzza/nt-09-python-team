@@ -6,4 +6,7 @@ def get_user_choice(user_choices):
 
         if len(user_input) != 1 or not user_input.isalpha():
             continue
+        
+        return user_input
+
 
