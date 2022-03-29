@@ -1,5 +1,7 @@
 import random
+
 from utils.constants import COUNTRIES
+from utils.user import get_user_choice
 
 
 def start_game():
@@ -15,4 +17,10 @@ def start_game():
             else:
                 output += "_"
         print(output)
+
+        user_input = get_user_choice(user_choices)
+        user_choices.append(user_input)
+
+
+
 
